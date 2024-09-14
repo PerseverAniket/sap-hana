@@ -8,5 +8,5 @@ define view ZJE_SIMPLE_CDS as select from zscarr1
    key carrid as Carrid,
    carrname as Carrname,
    currcode as Currcode,
-   url as Url
+   url      as Url
 }
