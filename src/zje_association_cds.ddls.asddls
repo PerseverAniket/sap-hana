@@ -13,3 +13,22 @@ on $projection.Carrid = _zsflight1.carrid
    zscarr1.url        as Url,
    _zsflight1
 }
+
+/*Select Queries on Association view
+"Without association fields 
+    SELECT carrid, carrname 
+       FROM zje_association 
+       INTO TABLE @DATA(carriers). 
+    IF sy-subrc EQ 0. 
+      cl_demo_output=>display( carriers ). 
+    ENDIF.
+
+"With association fields
+    SELECT
+       FROM zje_association_1\_zsflight1 as flight
+       FIELDS flight~carrid, flight~connid
+       INTO TABLE @DATA(flights).
+    IF sy-subrc EQ 0.
+      cl_demo_output=>display( flights ).
+    ENDIF.
+*/
