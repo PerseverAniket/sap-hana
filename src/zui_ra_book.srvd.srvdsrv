@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition for Booking CDS View'
+define service ZUI_RA_BOOK {
+  expose ZRI_RAP_BOOK;
+}

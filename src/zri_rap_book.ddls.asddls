@@ -1,6 +1,7 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Root View for ZJE_RAP_BOOK Table'
 @Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions: true
 define root view entity ZRI_RAP_BOOK 
     as select from zje_rap_book
 {
